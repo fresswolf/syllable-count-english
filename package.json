@@ -1,0 +1,28 @@
+{
+  "name": "syllable-count-english",
+  "description": "Accurate syllable counter for English words",
+  "version": "1.0.2",
+  "type": "module",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node test/index.js"
+  },
+  "keywords": [
+    "syllables",
+    "syllable",
+    "rhyme",
+    "language",
+    "english",
+    "arpabet",
+    "dictionary",
+    "pronunciation",
+    "spelling"
+  ],
+  "author": "Andreas Siegrist <andreas.siegrist@namutec.com> (https://namutec.com)",
+  "license": "MIT",
+  "dependencies": {
+    "syllable": "^5.0.1"
+  }
+}
