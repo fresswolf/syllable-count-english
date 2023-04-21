@@ -20,4 +20,7 @@ import {syllableCount} from "syllable-count-english";
 
 syllableCount("It's not easy to pronounce 'worcestershire'!");
 // returns 10
+
+syllableCount("Indonesia");
+// returns 4
 ```
