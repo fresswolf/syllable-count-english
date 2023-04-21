@@ -20,8 +20,4 @@ import {syllableCount} from "syllable-count-english";
 
 syllableCount("It's not easy to pronounce 'worcestershire'!");
 // returns 10
-
-syllableCount("Edinburgh");
-// returns 4
 ```
-Many libraries and online syllable counters wrongly return 11 and 3 for above examples.
