@@ -48,4 +48,4 @@ function syllableCountForWord(word) {
     return syllable(word);
 }
 
-export {syllableCount};
+export {syllableCount, cmuDictionaryLookup};

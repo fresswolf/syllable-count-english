@@ -19,7 +19,7 @@ function loadDictionary() {
         }
         const [key, arpabet] = trimmedLine.split("  ");
         if (arpabet) {
-            dictionary[key] = arpabet;
+            dictionary[key] = arpabet.trim();
         }
     }
 }

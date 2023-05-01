@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {syllableCount} from "../src/index.js";
+import {cmuDictionaryLookup, syllableCount} from "../src/index.js";
 
 test('syllable count words', (t) => {
     assert.strictEqual(syllableCount("Frog"),1);
@@ -18,4 +18,9 @@ test('syllable count sentences', (t) => {
     assert.strictEqual(syllableCount("It's not easy to pronounce 'worcestershire'!"), 10);
     assert.strictEqual(syllableCount("This... Is.some.text!\nWith two lines"), 7);
     assert.strictEqual(syllableCount("\n\n\n\n"),0);
+});
+
+test('cmu dictionary lookup', (t) => {
+    assert.strictEqual(cmuDictionaryLookup("Water"), "W AO1 T ER0");
+    assert.strictEqual(cmuDictionaryLookup("asdf"), undefined);
 });

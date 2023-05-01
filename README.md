@@ -24,3 +24,14 @@ syllableCount("It's not easy to pronounce 'worcestershire'!");
 syllableCount("Indonesia");
 // returns 4
 ```
+
+You can also get the arpabet representation 
+```sh
+import {cmuDictionaryLookup} from "syllable-count-english";
+
+cmuDictionaryLookup("Water");
+// returns "W AO1 T ER0"
+
+cmuDictionaryLookup("asdf");
+// returns undefined
+```
